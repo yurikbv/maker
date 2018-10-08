@@ -1,0 +1,36 @@
+{
+  "name": "html-template",
+  "version": "1.0.0",
+  "description": "HTML Template",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "HTML Template"
+  },
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cache": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-notify": "latest",
+    "gulp-rename": "latest",
+    "gulp-rsync": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-sass": "latest",
+    "gulp-svgstore": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "del": "latest",
+    "smart-grid": "latest",
+    "vinyl-ftp": "latest"
+  },
+  "author": "Bochkarev Yuriy",
+  "license": "ISC"
+}

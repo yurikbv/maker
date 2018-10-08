@@ -1,0 +1,36 @@
+html, body{
+  height: 100%;
+}
+
+body{
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: $color-default;
+  overflow-x: hidden;
+  opacity: 1;
+}
+
+section {
+	position: relative;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

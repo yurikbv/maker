@@ -1,0 +1,98 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+@media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+  /**/
+}
+
+/* Full HD, Wide Screens */
+@media only screen and (max-width : 1200px){
+  /**/
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+  /**/
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+  /**/
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+  /**/
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+  /**/
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+  /**/
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+  /**/
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+  /**/
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+  /**/
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+  /**/
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+  /**/
+  @media (min-resolution: 1.5dppx),(min-resolution: 144dpi){
+    /**/
+  }
+}
+

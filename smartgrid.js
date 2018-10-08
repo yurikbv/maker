@@ -5,20 +5,21 @@ let smartgrid = require('smart-grid');
 /* It's principal settings in smart grid project */
 let settings = {
   outputStyle: 'scss', /* less || scss || sass || stylus */
-  columns: 24, /* number of grid columns */
+  columns: 12, /* number of grid columns */
   offset: '30px', /* gutter width px || % || rem */
   mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
   tab: '  ',
   container: {
-    maxWidth: '960px', /* max-width оn very large screen */
-    fields: '30px' /* side fields */
+    maxWidth: '1170px', /* max-width оn very large screen */
+    fields: '60px' /* side fields */
   },
   breakPoints: {
     lg: {
       width: '1100px', /* -> @media (max-width: 1100px) */
     },
     md: {
-      width: '960px'
+      width: '960px',
+      fields: '30px' /* side fields */
     },
     sm: {
       width: '780px',
@@ -39,4 +40,4 @@ let settings = {
   }
 };
 
-smartgrid('./src/scss', settings);
+smartgrid('./app/scss', settings);

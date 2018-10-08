@@ -52,17 +52,17 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('sass', function() {
-	return gulp.src('app/sass/style.scss')
+	return gulp.src('app/scss/style.scss')
 	.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
   .pipe(gcmq())
   .pipe(sourcemaps.init())
 	.pipe(gulp.dest('app/css'))
 	.pipe(rename({suffix: '.min', prefix : ''}))
-	.pipe(autoprefixer(['last 2 versions']))
+	.pipe(autoprefixer(['last 15 versions']))
 	.pipe(cleanCSS({level: 2})) // Опционально, закомментировать при отладке
   .pipe(sourcemaps.write('.'))
 	.pipe(gulp.dest('app/css'))
-	.pipe(browserSync.reload({stream: true}));
+	.pipe(browserSync.stream());
 });
 
 gulp.task("sprite", function () {
@@ -75,7 +75,7 @@ gulp.task("sprite", function () {
 });
 
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
-	gulp.watch('app/sass/**/*.scss', ['sass']);
+	gulp.watch('app/scss/**/*.scss', ['sass']);
 	gulp.watch(['libs/**/*.js', 'app/js/**/*.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload);
 });

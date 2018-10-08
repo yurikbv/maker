@@ -1,0 +1,39 @@
+.mission {
+  margin-top: 644px;
+  display: flex;
+  align-items: center;
+}
+
+.section__title{
+  position: relative;
+  z-index: 1;
+  font-family: "Yantramanav",sans-serif;
+  font-weight: 900;
+  font-size: 286px;
+  letter-spacing: -17.16px;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color-blue,.99);
+    z-index: 2;
+  }
+  span{
+    position: absolute;
+    font-family: Raleway,sans-serif;
+    font-weight: 100;
+    font-size: 33px;
+    transform: rotate(-90deg);
+    left: 85px;
+    bottom: 215px;
+    z-index: 3;
+    letter-spacing: 0;
+  }
+}
+
+.mission__title{
+  left: -75px;
+}

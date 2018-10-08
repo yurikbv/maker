@@ -1,0 +1,5 @@
+@import "_mixins/font-face";
+
+@include font-face("Raleway", "../fonts/Raleway-Black", 900);
+@include font-face("Raleway", "../fonts/Raleway-Thin", 100);
+@include font-face("Yantramanav", "../fonts/Yantramanav-Black",900);

@@ -1,0 +1,74 @@
+header {
+  background: url("../img/mountain-back.png") center top no-repeat;
+  background-size: auto;
+}
+
+.background-fill{
+  background-color: rgba($color-blue,.75);
+}
+
+.header__inner{
+  @include wrapper;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 84px;
+  width: 127px;
+  margin-right: 32px;
+}
+
+.hamburger{
+  position: absolute;
+  display: inline-block;
+  right: -45px;
+  top: 99px;
+}
+
+.hamburger__button{
+  position: relative;
+  width: 48px;
+  height: 47px;
+  background-color: transparent;
+  border: none;
+  &:before , &:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+  }
+  &:before {
+    top: 15px;
+  }
+  &:after{
+    bottom: 15px;
+  }
+}
+
+.slogan{
+  font-size: 77px;
+  line-height: 88.44px;
+  font-weight: 100;
+  letter-spacing: -1.04px;
+  margin-top: 310px;
+}
+
+.menu-header__list{
+  padding-top: 20px;
+  position: absolute;
+  right: -150px;
+  top: 0;
+  height: 100vh;
+  width: 150px;
+  text-align: left;
+  background-color: #fff;
+  transition: all .1ms ease-in-out;
+}
+
+.menu-header__link{
+  text-decoration: none;
+  padding: 15px;
+}

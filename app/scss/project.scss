@@ -1,0 +1,25 @@
+
+.projects{
+  margin-top: 185px;
+  background: url("../img/projects_background.png") no-repeat top center;
+}
+
+.projects__inner{
+  @include wrapper;
+}
+
+.projects__letter{
+  position: relative;
+  left: -75px;
+  display: block;
+  font-weight: 900;
+  font-size: 1296px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: rgba($color-blue,.61);
+}
+
+.projects__title{
+  right: 0;
+  top: 0;
+}

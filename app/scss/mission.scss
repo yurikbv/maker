@@ -1,26 +1,26 @@
 .mission {
   margin-top: 644px;
-  display: flex;
-  align-items: center;
 }
 
 .section__title{
-  position: relative;
+  position: absolute;
   z-index: 1;
   font-family: "Yantramanav",sans-serif;
   font-weight: 900;
   font-size: 286px;
+  line-height: 1;
   letter-spacing: -17.16px;
-  &:before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba($color-blue,.99);
-    z-index: 2;
-  }
+  color: rgba($color-default,.01);
+  //&:before{
+  //  content: '';
+  //  position: absolute;
+  //  left: 0;
+  //  top: 0;
+  //  right: 0;
+  //  bottom: 0;
+  //  background-color: rgba($color-blue,.99);
+  //  z-index: 2;
+  //}
   span{
     position: absolute;
     font-family: Raleway,sans-serif;
@@ -28,12 +28,36 @@
     font-size: 33px;
     transform: rotate(-90deg);
     left: 85px;
-    bottom: 215px;
+    bottom: 134px;
     z-index: 3;
     letter-spacing: 0;
+    color: $color-default;
   }
 }
 
 .mission__title{
+  top: 173px;
   left: -75px;
+}
+
+.mission__image{
+  position: relative;
+  width: 660px;
+  left: 163px;
+  z-index: 4;
+  box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+}
+
+.mission_text{
+  text-align: left;
+  position: absolute;
+  width: 474px;
+  z-index: 4;
+  right: 0;
+  top: 240px;
+  line-height: 1.2;
+}
+
+.mission_text p:nth-child(n + 2) {
+  margin-top: 25px;
 }

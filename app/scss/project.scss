@@ -1,25 +1,47 @@
 
 .projects{
   margin-top: 185px;
-  background: url("../img/projects_background.png") no-repeat top center;
+  background: url("../img/projects_background.jpg") no-repeat top center;
 }
 
 .projects__inner{
   @include wrapper;
+  position: relative;
 }
 
-.projects__letter{
+.section__letter{
   position: relative;
-  left: -75px;
   display: block;
   font-weight: 900;
   font-size: 1296px;
   text-transform: uppercase;
   line-height: 1;
   color: rgba($color-blue,.61);
+  text-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
 }
 
+.projects__letter {
+  left: -220px;
+  top: -145px;
+}
+
+
 .projects__title{
-  right: 0;
-  top: 0;
+  right: 40px;
+  top: 120px;
+  letter-spacing: -5.72px;
+}
+
+.projects__logos{
+  position: absolute;
+  top: 260px;
+  left: 80px;
+  @include row-flex;
+  @include size(9);
+  align-items: center;
+}
+
+.projects__link{
+  @include size(4);
+  margin: 55px 15px;
 }

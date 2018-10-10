@@ -1,0 +1,25 @@
+.footer{
+  text-align: center;
+  margin-top: -315px;
+  padding-bottom: 205px;
+}
+
+.logo-footer__link{
+  position: relative;
+  right: 10px;
+  display: inline-block;
+}
+
+.menu-footer{
+  margin-top: 15px;
+}
+
+.menu-footer__item{
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.menu-footer__link{
+  color: $color-default;
+  font-size: 15px;
+}

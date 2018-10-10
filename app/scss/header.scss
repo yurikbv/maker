@@ -22,7 +22,7 @@ header {
 .hamburger{
   position: absolute;
   display: inline-block;
-  right: -58px;
+  right: -45px;
   top: 99px;
 }
 
@@ -32,6 +32,7 @@ header {
   height: 47px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   &:before , &:after {
     content: '';
     position: absolute;

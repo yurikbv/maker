@@ -9,18 +9,7 @@
   font-weight: 900;
   font-size: 286px;
   line-height: 1;
-  letter-spacing: -17.16px;
   color: rgba($color-default,.01);
-  //&:before{
-  //  content: '';
-  //  position: absolute;
-  //  left: 0;
-  //  top: 0;
-  //  right: 0;
-  //  bottom: 0;
-  //  background-color: rgba($color-blue,.99);
-  //  z-index: 2;
-  //}
   span{
     position: absolute;
     font-family: Raleway,sans-serif;
@@ -38,6 +27,7 @@
 .mission__title{
   top: 173px;
   left: -75px;
+  letter-spacing: -17.16px;
 }
 
 .mission__image{

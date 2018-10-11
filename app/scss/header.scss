@@ -1,6 +1,7 @@
 header {
   background: url("../img/mountain-back.png") center top no-repeat;
   background-size: auto;
+  @include md(background-size, contain);
 }
 
 .background-fill{
@@ -20,13 +21,34 @@ header {
 }
 
 .hamburger{
-  position: absolute;
+  position: fixed;
   display: inline-block;
-  right: -45px;
+  right: 10px;
   top: 99px;
+  z-index: 100;
+  &.hamburger__opened{
+    right: 160px;
+    .hamburger__button{
+      transition: all .4s ease-in-out;
+      background-color: rgba(black,.45);
+      border-radius: 5px;
+    }
+    .hamburger__button:before{
+      transition: all .4s ease-in-out;
+      transform: rotate(45deg);
+      top: 22px;
+    }
+    .hamburger__button:after{
+      transition: all .4s ease-in-out;
+      transform: rotate(-45deg);
+      bottom: 22px;
+    }
+  }
 }
 
+
 .hamburger__button{
+  outline: none;
   position: relative;
   width: 48px;
   height: 47px;
@@ -34,6 +56,7 @@ header {
   border: none;
   cursor: pointer;
   &:before , &:after {
+    transition: all .4s ease-in-out;
     content: '';
     position: absolute;
     height: 4px;
@@ -47,6 +70,7 @@ header {
   &:after{
     bottom: 15px;
   }
+
 }
 
 .slogan{
@@ -59,17 +83,33 @@ header {
 
 .menu-header__list{
   padding-top: 20px;
-  position: absolute;
+  position: fixed;
   right: -150px;
   top: 0;
   height: 100vh;
   width: 150px;
   text-align: left;
   background-color: #fff;
-  transition: all .1ms ease-in-out;
+  transition: all .4ms ease-in-out;
+  z-index: 100;
+  &.menu-header__opened{
+    animation: ease-in-out 0.4s forwards moveLeftMenu;
+  }
+}
+
+@keyframes moveLeftMenu {
+  to{
+    right: 0;
+  }
 }
 
 .menu-header__link{
   text-decoration: none;
   padding: 15px;
+  color: $color-blue;
+  transition: all .2s ease-in-out;
+  &:hover{
+    text-shadow: 5px 5px 10px #000;
+    transition: all .2s ease-in-out;
+  }
 }

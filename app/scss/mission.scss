@@ -1,5 +1,10 @@
+
+
 .mission {
   margin-top: 644px;
+  @include lg(margin-top,500px);
+  @include md(margin-top,300px);
+  @include sm(margin-top,100px);
 }
 
 .section__title{
@@ -28,6 +33,9 @@
   top: 173px;
   left: -75px;
   letter-spacing: -17.16px;
+  @include md(top,100px);
+  @include sm(top,50px);
+  transition: all .7s ease-in-out;
 }
 
 .mission__image{
@@ -36,6 +44,11 @@
   left: 163px;
   z-index: 4;
   box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+  @include size-md(10);
+  @include sm-block{
+    left: 100px;
+  }
+  //@include xs(left,0)
 }
 
 .mission_text{
@@ -46,6 +59,9 @@
   right: 0;
   top: 240px;
   line-height: 1.2;
+  transition: all .7s ease-in-out;
+  @include size-sm(10);
+  @include xs(top,100px);
 }
 
 .mission_text p:nth-child(n + 2) {

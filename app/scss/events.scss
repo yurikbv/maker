@@ -20,6 +20,7 @@ footer{
   left: 50%;
   transform: translateX(-50%);
   letter-spacing: -5.72px;
+  @include md(top,100px);
   span{
     left: 105px;
   }
@@ -30,6 +31,9 @@ footer{
   left: 70px;
   top: 275px;
   width: 480px;
+  @include md(top,350px);
+  @include sm(left,0);
+  @include size-sm(12);
 }
 
 .events__slogan{

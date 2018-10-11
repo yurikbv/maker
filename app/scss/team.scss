@@ -34,11 +34,23 @@
   .person_image{
     top: 60px;
     right: 165px;
+    @include md(top,0);
+    @include sm(right,0);
+    @include size-md(10);
   }
   .person__description{
     top: 372px;
     left: 295px;
     width: 320px;
+    @include size-md(8);
+    @include md(left,230px);
+    @include size-sm(10);
+    @include sm-block{
+      top: 260px;
+      left: 0;
+    }
+    @include size-sm(12);
+    @include xs(top,160px);
   }
 }
 
@@ -46,10 +58,18 @@
   .person_image{
     top: 868px;
     left: 40px;
+    @include size-md(6);
+    @include sm(top,650px);
+    @include size-sm(8);
   }
   .person__description{
     top: 1079px;
     right: 576px;
+    @include sm-block{
+      top: 750px;
+      right: 380px;
+    };
+    @include xs(right,200px);
   }
 }
 
@@ -57,10 +77,19 @@
   .person_image{
     top: 998px;
     right: 68px;
+    @include size-md(6);
+    @include size-sm(8);
+    @include sm-block{
+
+    }
   }
   .person__description{
     top: 1248px;
     right: 250px;
+    @include md-block{
+      right: 100px;
+      top: 1100px;
+    };
   }
 }
 
@@ -68,10 +97,22 @@
   .person_image{
     top: 1435px;
     right: 715px;
+    @include size-md(6);
+    @include size-sm(8);
+    @include lg(right,500px);
+    @include md(right,400px);
+    @include sm(right,300px);
+    @include xs-block{
+      right: 100px;
+      top: 1350px;
+    };
   }
   .person__description{
     top: 1682px;
     left: 70px;
+    @include xs-block{
+      top: 1550px;
+    };
   }
 }
 
@@ -79,10 +120,22 @@
   .person_image{
     top: 1663px;
     left: 733px;
+    @include size-md(6);
+    @include lg(left,600px);
+    @include md(left,500px);
+    @include sm(left,350px);
+    @include size-sm(8);
+    @include xs-block{
+      left: 100px;
+    };
   }
   .person__description{
     top: 1911px;
     right: -30px;
+    @include xs-block{
+      top: 1850px;
+      right: 0;
+    };
   }
 }
 

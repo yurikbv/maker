@@ -1,6 +1,6 @@
 (function () {
   function moveItem() {
-    let windowHeight = document.documentElement.clientHeight;
+    let windowHeight = document.body.clientHeight;
     let itemsLeft = document.body.querySelectorAll('.transitionLeft');
     let itemsRight = document.body.querySelectorAll('.transitionRight');
 
@@ -8,7 +8,6 @@
       for(let item of items){
         let coords = item.getBoundingClientRect();
         if(coords.top < windowHeight-100 && coords.top > -windowHeight || coords.bottom > -windowHeight && coords.bottom < windowHeight){
-          item.classList.remove(items.name);
           item.style.transform = '';
         }
       }
@@ -17,6 +16,7 @@
     makeDo(itemsRight);
   }
   window.onscroll = moveItem;
+  window.addEventListener('mousewheel',moveItem);
   moveItem();
 
 })();

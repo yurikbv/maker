@@ -43,6 +43,7 @@
   position: absolute;
   top: 260px;
   left: 80px;
+  transition: all .5s ease-in;
   @include row-flex;
   @include size(9);
   @include size-xs(12);

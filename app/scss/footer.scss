@@ -2,7 +2,8 @@
   text-align: center;
   margin-top: -315px;
   padding-bottom: 205px;
-  @include sm(margin-top,0)
+  @include sm(margin-top,0);
+  @include xs(margin-top,200px)
 }
 
 .logo-footer__link{

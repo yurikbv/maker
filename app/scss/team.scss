@@ -22,12 +22,14 @@
   position: absolute;
   z-index: 2;
   box-shadow: 0 178px 152px rgba(0, 0, 0, 0.45);
+  transition: all .5s ease-in-out;
 }
 
 .person__description{
   position: absolute;
   z-index: 3;
   text-align: left;
+  transition: all .5s ease-in-out;
 }
 
 .team__person:nth-of-type(1){
@@ -69,7 +71,7 @@
       top: 750px;
       right: 380px;
     };
-    @include xs(right,200px);
+    @include xs(right,100px);
   }
 }
 
